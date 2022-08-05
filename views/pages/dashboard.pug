@@ -1,0 +1,27 @@
+extends ../base.pug
+
+block content
+  main.content-wrapper
+    .l-grid
+      .l-grid__item
+        .c-chart
+      .l-grid__item.c-transaction
+        h2.title
+        table.c-transaction__table
+          thead.c-transaction__table__header
+            tr
+              th Receiver
+              th Type
+              th Date
+              th Amount
+          tbody
+            tr
+              td Starbucks Coffee
+              td Food
+              td 13 Dec. 2020
+              td 76.5
+            tr
+              td Nagad Bangladesh
+              td Food
+              td 14 Dec. 2020
+              td 23.45

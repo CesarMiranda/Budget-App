@@ -1,0 +1,34 @@
+extends ../../base.pug
+
+block content
+  main
+    header.header
+      .l-container
+        .header__content
+          .l-grid
+            .l-grid__item
+              h1.header__title Transactions
+              .header__subtitle Add Transactions
+    .l-container
+      .l-grid
+        .l-grid__item
+          form(action=`/admin/${editing ? 'edit-transaction' : 'add-transaction'}`, method='POST').form
+            .form__group
+              label.form__label(for='transactionTitle') Title
+              input#transactionTitle.form__control(type="text")
+            .form__group
+              label.form__label(for='transactionType') Type
+              select#transactionTitle.form__control(multiple='')
+                option Income
+                option Expense
+            .form__group
+              label.form__label(for='transactionCategory') Category
+              select#transactionCategory.form__control(multiple='')
+                option Food
+                option Credit Card Payment
+                option Service
+            .form__group
+              label.form__label(for='transactionAmount') Amount
+              input#transactionAmount.form__control(type="text")
+            .form__group
+              button.c-btn(type='submit')

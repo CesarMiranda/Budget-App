@@ -1,0 +1,148 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  background-color: #F7F7FF; }
+
+main {
+  width: calc(100% - 23rem); }
+
+@font-face {
+  font-family: "DM Sans", sans-serif;
+  src: url("../fonts/DMSans-Regular.woff2") format("woff2"), url("../fonts/DMSans-Regular.woff") format("woff"), url("../fonts/DMSans-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "DM Sans", sans-serif;
+  src: url("../fonts/DMSans-Italic.woff2") format("woff2"), url("../fonts/DMSans-Italic.woff") format("woff"), url("../fonts/DMSans-Italic.ttf") format("ttf");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: "DM Sans", sans-serif;
+  src: url("../fonts/DMSans-Medium.woff2") format("woff2"), url("../fonts/DMSans-Medium.woff") format("woff"), url("../fonts/DMSans-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "DM Sans", sans-serif;
+  src: url("../fonts/DMSans-MediumItalic.woff2") format("woff2"), url("../fonts/DMSans-MediumItalic.woff") format("woff"), url("../fonts/DMSans-MediumItalic.ttf") format("ttf");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: "DM Sans", sans-serif;
+  src: url("../fonts/DMSans-Bold.woff2") format("woff2"), url("../fonts/DMSans-Bold.woff") format("woff"), url("../fonts/DMSans-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "DM Sans", sans-serif;
+  src: url("../fonts/DMSans-BoldItalic.woff2") format("woff2"), url("../fonts/DMSans-BoldItalic.woff") format("woff"), url("../fonts/DMSans-BoldItalic.ttf") format("ttf");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap; }
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #25006B; }
+
+.l-container {
+  margin: 0 auto;
+  width: 100%;
+  position: relative; }
+  @media only screen and (min-width: 36em) {
+    .l-container {
+      max-width: 54rem; } }
+  @media only screen and (min-width: 48em) {
+    .l-container {
+      max-width: 72rem; } }
+  @media only screen and (min-width: 62em) {
+    .l-container {
+      max-width: 96rem; } }
+  @media only screen and (min-width: 75em) {
+    .l-container {
+      max-width: calc(100% - 23rem); } }
+  @media only screen and (min-width: 87.5em) {
+    .l-container {
+      max-width: calc(100% - 23rem); } }
+
+.l-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem; }
+
+.logo {
+  margin-top: 2.5rem;
+  margin-bottom: 9rem; }
+  .logo__sidebar {
+    font-size: 1.8rem; }
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 23rem;
+  background: linear-gradient(180deg, #935AFE, #5E50EE);
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  color: #ffffff; }
+  .nav__menu {
+    margin-top: 1rem; }
+  .nav__menu__list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none; }
+    .nav__menu__list__item {
+      font-size: 1.8rem;
+      display: flex; }
+      .nav__menu__list__item:not(:last-child) {
+        margin-bottom: 1rem; }
+
+.link {
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  width: 100%;
+  padding: 1rem 2.5rem;
+  position: relative; }
+  .link.active {
+    font-size: 2.2rem;
+    color: #ffffff; }
+    .link.active::before {
+      content: '';
+      width: .4rem;
+      height: 100%;
+      background-color: #ffffff;
+      position: absolute;
+      top: 0;
+      left: 0; }
+
+.icon {
+  margin-right: 1rem; }
+
+.wrapper {
+  display: flex; }
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column; }
