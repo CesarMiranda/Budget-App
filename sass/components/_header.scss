@@ -1,0 +1,16 @@
+.header {
+  padding-bottom: 6rem;
+  &__content {
+    padding-bottom: 3rem;
+    padding-top: 1.5rem;
+  }
+
+  &__title {
+    font-size: 3.25rem;
+    line-height: normal;
+  }
+
+  &__subtitle {
+    font-size: 1.6rem;
+  }
+}
