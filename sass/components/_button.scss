@@ -4,11 +4,17 @@
   &:visited {
       text-transform: uppercase;
       text-decoration: none;
-      padding: 0.375rem 0.75rem;
+      padding: .6rem 1.2rem;
       display: inline-block;
       border-radius: 0.25rem;
       transition: all 0.2s;
       position: relative;
       cursor: pointer;
+  }
+
+  &--primary {
+    border: 1px solid $color-cornflower-blue;
+    background-color: $color-cornflower-blue;
+    color: $color-white;
   }
 }

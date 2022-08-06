@@ -205,9 +205,14 @@ body {
 .c-btn, .c-btn:link, .c-btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 0.375rem 0.75rem;
+  padding: .6rem 1.2rem;
   display: inline-block;
   border-radius: 0.25rem;
   transition: all 0.2s;
   position: relative;
   cursor: pointer; }
+
+.c-btn--primary {
+  border: 1px solid #6657F5;
+  background-color: #6657F5;
+  color: #ffffff; }

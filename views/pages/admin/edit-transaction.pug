@@ -16,21 +16,21 @@ block content
             .card__body
               form(action=`/admin/${editing ? 'edit-transaction' : 'add-transaction'}`, method='POST').form
                 .form__group
-                  label.form__label(for='transactionTitle') Title
-                  input#transactionTitle.form__control(type="text")
+                  label.form__label(for="transactionTitle") Title
+                  input#transactionTitle.form__control(type="text", name="title")
                 .form__group
-                  label.form__label(for='transactionType') Type
-                  select#transactionTitle.form__control
+                  label.form__label(for="transactionType") Type
+                  select#transactionType.form__control(name="type")
                     option Income
                     option Expense
                 .form__group
-                  label.form__label(for='transactionCategory') Category
-                  select#transactionCategory.form__control
+                  label.form__label(for="transactionCategory") Category
+                  select#transactionCategory.form__control(name="category")
                     option Food
                     option Credit Card Payment
                     option Service
                 .form__group
-                  label.form__label(for='transactionAmount') Amount
-                  input#transactionAmount.form__control(type="text")
+                  label.form__label(for="transactionAmount") Amount
+                  input#transactionAmount.form__control(type="text", name="amount")
                 .form__group
-                  button.c-btn(type='submit') Submit
+                  button.c-btn.c-btn--primary(type="submit") Submit
