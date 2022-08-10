@@ -1,5 +1,12 @@
 const Transaction = require('../models/transaction');
 
+exports.transactions = (req, res) => {
+  res.render('pages/admin/transactions', {
+    pageTitle: 'Transactions',
+    path: '/admin/transactions'
+  })
+};
+
 exports.getAddTransaction = (req, res) => {
   res.render('pages/admin/edit-transaction', {
     pageTitle: 'Add Transaction',

@@ -2,13 +2,9 @@ extends ../../base.pug
 
 block content
   main
-    header.header
-      .l-container
-        .header__content
-          .l-grid
-            .l-grid__item
-              h1.header__title Transactions
-              .header__subtitle Add Transactions
+    - var title = 'Add Transaction'
+    - var subtitle = 'Add new transaction'
+    include ../../partials/header
     .l-container
       .l-grid
         .l-grid__item

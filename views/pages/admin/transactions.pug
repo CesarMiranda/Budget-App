@@ -1,0 +1,30 @@
+extends ../../base.pug
+
+block content
+  main
+    - var title = 'Transactions'
+    - var subtitle = 'View all transactions'
+    include ../../partials/header
+    .l-container
+      .l-grid
+        .l-grid__item
+          .actions
+            a.btn.btn-primary(href="admin/add-transaction") Add Transaction
+          table#myTable.table
+            thead
+              tr
+                th Title
+                th Type
+                th Amount
+                th Date
+                th Actions
+              tbody
+                tr
+                  td Lorem ipsum
+                  td Egreso
+                  td 1250
+                  td May 23 2022
+                  td
+                    .table__actions
+                      a.btn.btn--success(href="#") Edit
+                      a.btn.btn--danger(href="#") Delete
